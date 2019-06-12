@@ -37,26 +37,33 @@
         </exclude>
     </groups>
     <testsuites>
-        <testsuite name="unit">
+        <testsuite name="unit_b2bcodext">
+            <directory>vendor/b2bcodext/*/Tests/Unit</directory>
+            <directory>vendor/b2bcodext/*/*/Tests/Unit</directory>
+            <directory>vendor/b2bcodext/*/*/*/Tests/Unit</directory>
+            <directory>vendor/b2bcodext/*/*/*/*/Tests/Unit</directory>
+            <directory>vendor/b2bcodext/*/*/*/*/*/Tests/Unit</directory>
+        </testsuite>
+        <testsuite name="functional_b2bcodext">
+            <directory>vendor/b2bcodext/*/Tests/Functional</directory>
+            <directory>vendor/b2bcodext/*/*/Tests/Functional</directory>
+            <directory>vendor/b2bcodext/*/*/*/Tests/Functional</directory>
+            <directory>vendor/b2bcodext/*/*/*/*/Tests/Functional</directory>
+            <directory>vendor/b2bcodext/*/*/*/*/*/Tests/Functional</directory>
+        </testsuite>
+        <testsuite name="unit_oro">
             <directory>vendor/oro/*/Tests/Unit</directory>
             <directory>vendor/oro/*/*/Tests/Unit</directory>
             <directory>vendor/oro/*/*/*/Tests/Unit</directory>
             <directory>vendor/oro/*/*/*/*/Tests/Unit</directory>
             <directory>vendor/oro/*/*/*/*/*/Tests/Unit</directory>
         </testsuite>
-        <testsuite name="functional">
+        <testsuite name="functional_oro">
             <directory>vendor/oro/*/Tests/Functional</directory>
             <directory>vendor/oro/*/*/Tests/Functional</directory>
             <directory>vendor/oro/*/*/*/Tests/Functional</directory>
             <directory>vendor/oro/*/*/*/*/Tests/Functional</directory>
             <directory>vendor/oro/*/*/*/*/*/Tests/Functional</directory>
-        </testsuite>
-        <testsuite name="selenium">
-            <directory>vendor/oro/*/Tests/Selenium</directory>
-            <directory>vendor/oro/*/*/Tests/Selenium</directory>
-            <directory>vendor/oro/*/*/*/Tests/Selenium</directory>
-            <directory>vendor/oro/*/*/*/*/Tests/Selenium</directory>
-            <directory>vendor/oro/*/*/*/*/*/Tests/Selenium</directory>
         </testsuite>
     </testsuites>
     <php>
